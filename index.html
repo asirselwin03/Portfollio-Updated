@@ -6,8 +6,10 @@
 <title>Asir Selwin | Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -17,315 +19,327 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#0f172a;
-color:white;
+background:#F8FAFC;
+color:#1E293B;
+line-height:1.6;
 }
 
+/* HEADER */
+
 header{
-height:100vh;
+background:linear-gradient(135deg,#0F172A,#1E3A8A,#2563EB);
+color:white;
+min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-text-align:center;
-padding:20px;
-background:linear-gradient(135deg,#0f172a,#1e293b);
+padding:50px;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.profile-img{
+width:280px;
+height:280px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid white;
+box-shadow:0 15px 40px rgba(0,0,0,.3);
 }
 
 .hero{
-max-width:900px;
-}
-
-.profile{
-width:220px;
-height:220px;
-border-radius:50%;
-object-fit:cover;
-border:5px solid #38bdf8;
-margin-bottom:25px;
+max-width:650px;
 }
 
 .hero h1{
-font-size:3rem;
-margin-bottom:10px;
+font-size:4rem;
+background:linear-gradient(90deg,#fff,#06B6D4,#F59E0B);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
 .hero h2{
-color:#38bdf8;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:1.1rem;
-line-height:1.8;
-color:#cbd5e1;
+color:#BFDBFE;
+margin:15px 0;
 }
 
 .btn{
 display:inline-block;
 margin-top:25px;
-padding:12px 30px;
-background:#38bdf8;
-color:black;
-font-weight:600;
+padding:14px 35px;
+background:#F59E0B;
+color:white;
 text-decoration:none;
-border-radius:30px;
+border-radius:50px;
+font-weight:600;
 }
+
+/* SECTION */
 
 section{
 padding:80px 10%;
 }
 
 .section-title{
-font-size:2rem;
-color:#38bdf8;
-margin-bottom:30px;
 text-align:center;
+font-size:2.5rem;
+color:#2563EB;
+margin-bottom:50px;
 }
 
-.about{
-text-align:center;
-line-height:2;
-color:#cbd5e1;
+.section-title::after{
+content:'';
+display:block;
+width:80px;
+height:4px;
+background:#06B6D4;
+margin:10px auto;
+border-radius:10px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(37,99,235,.12);
+margin-bottom:25px;
 }
 
 .skills{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 gap:20px;
 }
 
-.skill-card{
-background:#1e293b;
-padding:25px;
+.skill{
+background:linear-gradient(135deg,#2563EB,#06B6D4);
+padding:20px;
+color:white;
 border-radius:15px;
 text-align:center;
+font-weight:600;
 }
 
-.skill-card h3{
-color:#38bdf8;
-margin-bottom:15px;
-}
-
-.projects{
+.project-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 gap:25px;
 }
 
-.project{
-background:#1e293b;
+.project-card{
+background:white;
 padding:25px;
-border-radius:15px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
-.project h3{
-color:#38bdf8;
+.project-card h3{
+color:#2563EB;
 margin-bottom:15px;
 }
 
-.project p{
-color:#cbd5e1;
-line-height:1.8;
-}
-
 .timeline{
-max-width:900px;
-margin:auto;
+border-left:4px solid #2563EB;
+padding-left:30px;
 }
 
-.card{
-background:#1e293b;
-padding:25px;
-margin-bottom:20px;
-border-radius:15px;
-}
-
-.card h3{
-color:#38bdf8;
-margin-bottom:10px;
+.timeline-item{
+margin-bottom:40px;
 }
 
 footer{
-background:#020617;
-padding:40px;
+background:#0F172A;
+color:white;
+padding:50px;
 text-align:center;
 }
 
 footer h2{
-margin-bottom:10px;
-color:#38bdf8;
+color:#06B6D4;
+margin-bottom:15px;
 }
 
-footer p{
-color:#cbd5e1;
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.8rem;
 }
+
+.profile-img{
+width:220px;
+height:220px;
+}
+
+}
+
 </style>
 </head>
-
 <body>
 
 <header>
+
 <div class="hero">
 
-<img src="your-photo1.jpg.png" class="profile" alt="Asir Selwin">
+<h1>ASIR SELWIN S</h1>
 
-<h1>ASIR SELWIN</h1>
-
-<h2>Computer Science Graduate & Technology Innovator</h2>
+<h2>Computer Science Student | Web Developer</h2>
 
 <p>
-Passionate about Software Development, Healthcare Technology,
-Cybersecurity, Artificial Intelligence and Innovative Digital Solutions.
+Passionate about Software Development, AngularJS,
+Healthcare Technology, Artificial Intelligence,
+Cybersecurity and Digital Innovation.
 </p>
 
-<a href="#about" class="btn">Explore Portfolio</a>
+<a href="#projects" class="btn">View Projects</a>
 
 </div>
+
+<img src="profile.jpg.png" class="profile-img">
+
 </header>
 
-<section id="about">
+<section>
+
 <h2 class="section-title">About Me</h2>
 
-<div class="about">
+<div class="card">
 <p>
-I am Asir Selwin, a passionate Computer Science student with strong
-interests in software development, healthcare technology,
-cybersecurity, and intelligent systems.
-</p>
-
-<br>
-
-<p>
-My goal is to pursue postgraduate studies at Madras Christian College
-(MCC) and contribute to innovative research and technological
-advancements that create meaningful impact in society.
+I am Asir Selwin S, pursuing Bachelor of Computer Science
+at Madras Christian College. I am passionate about building
+innovative software solutions and continuously enhancing my
+technical expertise through internships, projects and
+research-oriented learning.
 </p>
 </div>
+
 </section>
 
 <section>
+
+<h2 class="section-title">Education</h2>
+
+<div class="card">
+<h3>Madras Christian College</h3>
+<p>Bachelor of Computer Science</p>
+<p>CGPA: 8.0</p>
+<p>Last Semester Percentage: 83%</p>
+</div>
+
+<div class="card">
+<h3>Sri Vijay Vidhyalaya Matric Hr. Sec School</h3>
+<p>12th Standard – 71%</p>
+<p>11th Standard – 72%</p>
+</div>
+
+</section>
+
+<section>
+
 <h2 class="section-title">Technical Skills</h2>
 
 <div class="skills">
 
-<div class="skill-card">
-<h3>Programming</h3>
-<p>Python<br>Java<br>C<br>SQL</p>
-</div>
-
-<div class="skill-card">
-<h3>Development</h3>
-<p>Web Development<br>Database Management<br>Software Engineering</p>
-</div>
-
-<div class="skill-card">
-<h3>Emerging Tech</h3>
-<p>Artificial Intelligence<br>Cybersecurity<br>Healthcare Systems</p>
-</div>
-
-<div class="skill-card">
-<h3>Tools</h3>
-<p>VS Code<br>MySQL<br>GitHub<br>MS Office</p>
-</div>
+<div class="skill">Java</div>
+<div class="skill">JavaScript</div>
+<div class="skill">HTML5</div>
+<div class="skill">CSS3</div>
+<div class="skill">AngularJS</div>
+<div class="skill">SQL</div>
+<div class="skill">PHP</div>
+<div class="skill">Responsive Design</div>
 
 </div>
+
 </section>
 
 <section>
-<h2 class="section-title">Featured Projects</h2>
 
-<div class="projects">
-
-<div class="project">
-<h3>MedFuture</h3>
-<p>
-A Smart Healthcare Management System designed to improve patient
-record management using QR codes and unique patient identification.
-Provides secure, efficient and fast healthcare data access.
-</p>
-</div>
-
-<div class="project">
-<h3>Votoliniea</h3>
-<p>
-An Online Voting System integrated with Fingerprint Authentication
-and Aadhaar Verification to enhance voting security, transparency
-and voter trust.
-</p>
-</div>
-
-<div class="project">
-<h3>Check O ₹</h3>
-<p>
-A Fake Currency Detection System that verifies currency authenticity
-through serial number validation and fraud detection techniques.
-</p>
-</div>
-
-</div>
-</section>
-
-<section>
-<h2 class="section-title">Research Interests</h2>
+<h2 class="section-title">Internships</h2>
 
 <div class="timeline">
 
-<div class="card">
-<h3>Artificial Intelligence</h3>
-<p>Exploring intelligent systems that improve automation and decision making.</p>
+<div class="card timeline-item">
+<h3>Internz Learn</h3>
+<p><b>Web Development Intern</b></p>
+<p>Developed Registration Forms and Profile Pages using HTML and CSS. Learned responsive web design and front-end development.</p>
 </div>
 
-<div class="card">
-<h3>Healthcare Technology</h3>
-<p>Building digital healthcare solutions for efficient patient care.</p>
-</div>
-
-<div class="card">
-<h3>Cybersecurity</h3>
-<p>Creating secure digital systems and protecting sensitive information.</p>
-</div>
-
-<div class="card">
-<h3>Smart Applications</h3>
-<p>Developing innovative software solutions for real-world problems.</p>
+<div class="card timeline-item">
+<h3>SISESOFT IT Solution</h3>
+<p><b>AngularJS Developer Intern</b></p>
+<p>Worked on a real-time Supply Chain Technology Management System using AngularJS, inventory tracking and stock management modules.</p>
 </div>
 
 </div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="project-grid">
+
+<div class="project-card">
+<h3>🏥 MedFuture</h3>
+<p>Smart Healthcare Management System using QR-based patient records and secure healthcare data management.</p>
+</div>
+
+<div class="project-card">
+<h3>🗳️ Votoliniea</h3>
+<p>Online Voting System with Fingerprint Authentication and Aadhaar Verification for secure elections.</p>
+</div>
+
+<div class="project-card">
+<h3>💵 Check O ₹</h3>
+<p>Fake Currency Detection System using serial number validation and fraud prevention mechanisms.</p>
+</div>
+
+</div>
+
 </section>
 
 <section>
-<h2 class="section-title">Why MCC?</h2>
 
-<div class="about">
-<p>
-Madras Christian College offers an exceptional academic environment,
-research opportunities, experienced faculty, and holistic student
-development. I aspire to enhance my technical expertise, participate
-in impactful research, and contribute positively to the MCC community.
-</p>
+<h2 class="section-title">Research Interests</h2>
+
+<div class="card">
+<ul>
+<li>Artificial Intelligence</li>
+<li>Machine Learning</li>
+<li>Healthcare Technology</li>
+<li>Cybersecurity</li>
+<li>Software Engineering</li>
+<li>Web Development</li>
+</ul>
 </div>
+
 </section>
 
 <section>
-<h2 class="section-title">Career Vision</h2>
 
-<div class="about">
+<h2 class="section-title">Career Objective</h2>
+
+<div class="card">
 <p>
-To become a technology leader and researcher who develops innovative
-software solutions in healthcare, cybersecurity, and artificial
-intelligence while creating meaningful impact through technology.
+To become a Software Engineer and Technology Innovator by applying technical expertise and problem-solving skills to create impactful digital solutions.
 </p>
 </div>
+
 </section>
 
 <footer>
-<h2>Thank You</h2>
 
-<p>
-ASIR SELWIN<br>
-Aspiring Computer Science Professional<br>
-Technology Enthusiast | Innovator | Lifelong Learner
-</p>
+<h2>Contact</h2>
+
+<p><i class="fas fa-envelope"></i> asirselwin@gmail.com</p>
+<p><i class="fas fa-phone"></i> +91 8015092594</p>
+<p><i class="fas fa-location-dot"></i> Tambaram, Chennai, Tamil Nadu</p>
+
+<br>
+
+<p>© 2026 Asir Selwin S | Professional Portfolio</p>
+
 </footer>
 
 </body>
